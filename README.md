@@ -1,28 +1,53 @@
 # Ng4StompDemo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli)
+ version 1.0.0 and Angular4 (version 4.0.0) to act as a sample for 
+ [@stomp/ng2-stompjs](https://github.com/stomp-js/ng2-stompjs).
+
+## Setup
+
+Install dependencies:
+
+```bash
+$ npm install
+```
+or, if using yarn
+
+```bash
+$ yarn
+```
+
+Configure details for your Stomp Broker by editing
+ `src/app/services/config/config.service.ts`
+
+The configuration should work as is for a RabbitMQ instance
+ running on localhost with default settings and Web STOMP 
+ plugin activated.
+ (see: https://www.rabbitmq.com/web-stomp.html).
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
+The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Where Next
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+Check the following files:
 
-## Build
+- src/app/services/config/config.service.ts -
+  The configuration service.
+- src/app/app.module.ts - Service provisions for
+  [Dependency Injection](https://angular.io/docs/ts/latest/guide/dependency-injection.html).
+- src/app/components/rawdata/rawdata.component.ts - subscribing / unsubscribing a queue and
+  publishing messages.
+- src/app/components/status/status.component.ts - monitoring status of Stomp connection.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Contributors
 
-## Running unit tests
+- [Sam Finnigan](https://github.com/sjmf)
+- [Jimi (Dimitris) Charalampidis](https://github.com/JimiC)
+- [Deepak Kumar](https://github.com/kum-deepak)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## License
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+MIT

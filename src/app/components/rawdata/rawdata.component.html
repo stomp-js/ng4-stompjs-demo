@@ -1,0 +1,20 @@
+<app-status></app-status>
+
+<div id="raw">
+  <button class="btn btn-primary" (click)="onSendMessage()">Send Test Message</button>
+  <button class="btn btn-primary" (click)="subscribe()" [disabled]="subscribed">Subscribe</button>
+  <button class="btn btn-primary" (click)="unsubscribe()" [disabled]="!subscribed">Unsubscribe</button>
+  <span *ngIf="subscribed">Subscribed</span>
+  <span *ngIf="!subscribed">Unsubscribed</span>
+  <h2>Messages</h2>
+  <p>{{count}} total</p>
+
+  <h3 *ngIf="count">Latest:</h3>
+  <pre>{{messages | async}}</pre>
+
+  <h3 *ngIf="mq.length">History:</h3>
+  <ol>
+    <li *ngFor="let m of mq">{{m}}</li>
+  </ol>
+
+</div>
