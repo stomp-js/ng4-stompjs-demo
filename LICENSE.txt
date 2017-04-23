@@ -1,4 +1,4 @@
-Copyright (c) 2017 Deepak Kumar
+Copyright (c) 2017 Deepak Kumar  and contributors
 
 MIT License
 

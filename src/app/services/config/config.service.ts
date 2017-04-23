@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
@@ -19,12 +19,16 @@ export class ConfigService extends StompConfigService {
   }
 
   public get(): Observable<StompConfig> {
-    const conf: StompConfig= {
+    const conf: StompConfig = {
       // Which server?
       url: "ws://127.0.0.1:15674/ws",
 
-      user: "guest",
-      pass: "guest",
+      // Headers
+      // Typical keys: login, passcode, host
+      headers: {
+        login: "guest",
+        passcode: "guest"
+      },
 
       // How often to heartbeat?
       // Interval in milliseconds, set to 0 to disable
