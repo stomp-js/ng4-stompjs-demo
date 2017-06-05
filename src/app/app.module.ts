@@ -7,7 +7,7 @@ import {AppComponent} from './app.component';
 import {RawDataComponent} from './components/rawdata/rawdata.component';
 import {StatusComponent} from './components/status/status.component';
 import {ConfigService} from './services/config/config.service';
-import {StompConfigService, StompService} from "@stomp/ng2-stompjs";
+import {StompConfigService, StompService} from '@stomp/ng2-stompjs';
 
 
 

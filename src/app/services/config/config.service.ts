@@ -21,13 +21,13 @@ export class ConfigService extends StompConfigService {
   public get(): Observable<StompConfig> {
     const conf: StompConfig = {
       // Which server?
-      url: "ws://127.0.0.1:15674/ws",
+      url: 'ws://127.0.0.1:15674/ws',
 
       // Headers
       // Typical keys: login, passcode, host
       headers: {
-        login: "guest",
-        passcode: "guest"
+        login: 'guest',
+        passcode: 'guest'
       },
 
       // How often to heartbeat?
