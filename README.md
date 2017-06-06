@@ -34,9 +34,8 @@ The app will automatically reload if you change any of the source files.
 
 Check the following files:
 
-- src/app/services/config/config.service.ts -
-  The configuration service.
-- src/app/app.module.ts - Service provisions for
+- src/app/app.module.ts - Configuration and service provisions for
+  StompService using 
   [Dependency Injection](https://angular.io/docs/ts/latest/guide/dependency-injection.html).
 - src/app/components/rawdata/rawdata.component.ts - subscribing / unsubscribing a queue and
   publishing messages.
