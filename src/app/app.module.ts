@@ -8,7 +8,6 @@ import {RawDataComponent} from './components/rawdata/rawdata.component';
 import {StatusComponent} from './components/status/status.component';
 import {StompConfig, StompService} from '@stomp/ng2-stompjs';
 
-
 const stompConfig: StompConfig = {
   // Which server?
   url: 'ws://127.0.0.1:15674/ws',
